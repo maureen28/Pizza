@@ -1,0 +1,13 @@
+ul{
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+    display: block;
+    position: sticky,fixed bottom;
+
+}
+li{
+float: left;
+padding: 2rem;
+
+}

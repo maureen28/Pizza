@@ -1,4 +1,4 @@
-# Pizza 
+# Pazzi per la pizza
 
 ## Author: Maureen Murimi
 
@@ -16,6 +16,7 @@
 <ul>
 <li>Clone the repository at </li>
 <li>Open <ins>index.html</ins> on your browser.</li>
+</ul>
 
 ### Behaviour Driven Development
 
