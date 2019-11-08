@@ -9,5 +9,7 @@ Pizza.prototype.addToArray = () => {
     this.size.small = 500;
     this.size.medium = 750;
     this.size.large = 1000;
-
+for(let k in this.size){
+    return this.size
+}
 }
