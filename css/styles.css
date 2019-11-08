@@ -11,3 +11,6 @@ float: left;
 padding: 2rem;
 
 }
+html{
+    scroll-behavior: smooth;
+}
