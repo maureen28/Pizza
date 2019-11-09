@@ -25,3 +25,8 @@ p{
 .title{
     font-size: 1.5rem;
 }
+.contact{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    text-align: center;
+    line-height: 1.5em;
+}
