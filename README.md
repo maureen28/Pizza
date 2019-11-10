@@ -5,7 +5,6 @@
 ### Description
 
 ### Technologies Used
-<hr>
 <ol>
 <li>HTML</li>
 <li>CSS</li>
@@ -14,15 +13,15 @@
 </ol>
 
 ### Set-up Instructions.
-<hr>
 <ul>
 <li>Clone the repository to a loaction in your file at https://github.com/maureen28/Pizza.git </li>
 <li>Open the folder you have cloned</li>
 <li>Open <ins>index.html</ins> on your browser.</li>
 </ul>
+<strong>LIVE LINK:</strong>
 
 ### Behaviour Driven Development
-<ol type="a">
+<ol type="I">
 <li>Displays form options for choosing the size of Pizza,the type of crust and toppings one wants.</li>
 <ul>
 <li>INPUT: User selects pizza size they want</li>
@@ -39,10 +38,16 @@
 </ol>
 
 ### Known Bugs
-If you find a bug please feel freee to contribute.
+If you find a bug please feel free to alert me.
 To fix the bug:
 <ul list-style-type=circle;>
 <li>Fork the repository on my github</li>
-<li></li>
+<li>Open your terminal</li>
+<li>Create a new branch</li>
+<li>Make the changes, then (git add) to add changes</li>
+<li>Commit the changes you have made(git commit -m"Fix js bug") </li>
+<li>Push changes made and click pull request so that I can access the changes made.</li>
 
 ### Contact Information
+> To get in touch E-MAIL me on murimimaureen8@gmail.com.
+
