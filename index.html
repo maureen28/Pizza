@@ -15,15 +15,15 @@
         <h1><b>PAZZI PER LA PIZZA</b></h1>
         <ul>
             <li><a href="#menu">MENU</a></li>
-            <li><a href="#order">ORDER</a></li>
+            <li><a href="#checkout">Checkout</a></li>
             <li><a href="">ABOUT</a></li>
-            <li><a href="#contact">CONTACT US</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
         </ul>
     </div><br><br><br><br>
     <div class="container-fluid">
         <div id="menu">
             <div class="row">
-                <div class="col-md-3 col-lg-2 col-sm-1 p-1 mx-auto">
+                <div class="col-md-3 col-lg-3 mx-auto">
                     <div class="card" class="card-img-top">
                         <img src="images/pizza1.jpg" alt="Meat lovers pizza" class="mx-auto w-100">
                         <div class="card-body">
@@ -53,12 +53,13 @@
                                     <option value="Bacon">Bacon</option>
                                     <option value="pepper">pepper</option>
                                 </select>
-                                <input type="b" value="" placeholder="Proceed to pay">
+                                <br>
+                                <label style="text-align: center;" class="btn-success form-control">Proceed to Pay</label>
                             </form>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-lg-3 col-sm-2 p-1 mx-auto">
+                <div class="col-md-3 col-lg-3 mx-auto">
                     <div class="card">
                         <img src="images/pizza2.jpg" alt="Vegan pizza" class="mx-auto w-100">
                         <div class="card-body">
@@ -89,11 +90,13 @@
                                     <option value="Bacon">Bacon</option>
                                     <option value="pepper">pepper</option>
                                 </select>
+                                <br>
+                                <label style="text-align: center;" class="btn-success form-control">Proceed to Pay</label>
                             </form>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-lg-3 col-sm-2 p-1 mx-auto">
+                <div class="col-md-3 col-lg-3 mx-auto">
                     <div class="card">
                         <img src="images/pizza3.jpg" alt="Hawaiian pizza" class="mx-auto w-100">
                         <div class="card-body">
@@ -123,12 +126,13 @@
                                     <option value="Bacon">Bacon</option>
                                     <option value="pepper">pepper</option>
                                 </select>
-                                <button type="button" id="o"></button>
+                                <br>
+                                <label style="text-align: center;" class="btn-success form-control">Proceed to Pay</label>
                             </form>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-lg-3 col-sm-2 p-1 mx-auto">
+                <div class="col-md-3 col-lg-3 mx-auto">
                     <div class="card">
                         <img src="images/pizza4.png" alt="Mediterranean lamb" class="mx-auto w-100">
                         <div class="card-body">
@@ -161,26 +165,41 @@
                                     <option value="Bacon">Bacon</option>
                                     <option value="pepper">pepper</option>
                                 </select>
+                                <br>
+                                <label style="text-align: center;" class="btn-success form-control">Proceed to Pay</label>
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class=row>
         <div id="pick-del">
             <p>Would you prefer pickup or delivery?</p>
+                <div class="btn-group" data-toggle="button">
+                        <input type="hidden" value="✓">
+            <label class="btn-success form-control">Pick-up</label>
+            <label class="btn-primary form-control">Delivery </label>
+            </div>
+            <hr>
+            <p class="text-center">Where are we delivering to?</p>
             <form>
-
-
-                <input id="option2" name="options" type="radio">Pick up
-                </label>
-                <div class="visible-pickup">
-                    <div id="places-autocomplete-wrap">
-                        <input class="form-control gtm-form-checkout" id="places-autocomplete"
-                            placeholder="Enter your location" type="search" autocomplete="off">
-                    </div>
-            </form>
+                    <select class="form-control" placeholder="Choose Location">
+                        <option value="location">Choose Location</option>
+                        <option value="location">Spring Valley</option>
+                        <option value="location">Prestige</option>
+                        <option value="location">Other</option>
+                    </select>
+                </form>
+        </div>
+    </div>
             <p></p>
+
+
+
+
+
+
         </div>
         <div class="container">
             <div class="contact">
@@ -195,15 +214,12 @@
                         </form>
                         </div>
                         <div class="col-lg-2,col-md-3">
-                        <p>E-MAIL</p>
-                        <p>@murimimaureen8@gmail.com</p>
-                        <hr>
                         <p>TELEPHONE</p>
-                        <p>0799280333</p>
-                        <hr>
+                        <p>0799280333</p> <hr>
                         <p>VISIT</p>
-                        <p>NGONG-LANE PLAZA</p>
-                        <P>NGONG,NAIROBI</P>
+                        <p>MARKET MANSION</p>
+                        <P>00200,NAIROBI</P>
+                        <p>Follow us on <i class="fab fa-instagram"></i></p>
                     </div>
                     </div>
                 </div>
