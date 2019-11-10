@@ -12,10 +12,15 @@ padding: 2rem;
 html{
     scroll-behavior: smooth;
 }
+.back{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 h1{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 3rem;
-}  
+    text-align: center;
 p{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -30,6 +35,6 @@ p{
     text-align: center;
     line-height: 1.5em;
 }
-card{
+.card{
     box-shadow:  0 4px 8px 0 ;
 }
