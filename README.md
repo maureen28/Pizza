@@ -51,3 +51,6 @@ To fix the bug:
 ### Contact Information
 > To get in touch E-MAIL me on murimimaureen8@gmail.com.
 
+MIT License
+
+Copyright (c) 2019 maureen28
