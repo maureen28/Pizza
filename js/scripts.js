@@ -4,6 +4,27 @@ function Pizza(name) {
     this.crust = [];
     this.toppings = [];
 }
+// Pizza(name)
+function hawaiannPizza{
+    this.name = "Hawaiann";
+    this.size = size;
+    this.crust = crust;
+    this.toppings = toppings;
+}
+hawaiannPizza.prototype=function(){
+    return"Name"+"Size"+"Crust"+"Toppings"
+}
+
+function MediterraneanPizza{
+    this.name = "Mediterranean";
+    this.size = size;
+    this.crust = crust;
+    this.toppings = toppings;
+}
+hawaiannPizza.prototype=function(){
+    return"Name"+"Size"+"Crust"+"Toppings"
+}
+
 // crust
 function Crust(){
     var crust;
@@ -53,10 +74,9 @@ var magharitta={name:"magharitta", properties: [size,crust,toppings]}
 //jQuery
 $(document).ready(function(event){
     event.preventDefault()
-    $("#o").click(function(){
-
-    $("#xx").val()
-    $("#xx option:selected").text()
+    $("#o").change(function(){
+PizzaSelecteed("#xx").val()
+    $("#ul option:selected").text(Size)
     });
 });
 
