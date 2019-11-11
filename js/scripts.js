@@ -82,7 +82,7 @@ function Crust() {
                 toppings = 40
             }   return toppings;
         }
-
+//Business Logic
                 //jQuery
                 //meatLovers
                 $(document).ready(function () {
@@ -188,4 +188,3 @@ function Crust() {
                                         $("#checkout").text(input)
                                     })
                                 });
-        

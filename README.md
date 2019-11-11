@@ -3,7 +3,7 @@
 ## Author: Maureen Murimi
 
 ### Description
-This web application helps users order the pizza they want 
+This web application lets users build a customized pizza from them being able to choose the size, crust type and toppings they want.The user is also able to choose between picking up their pizza or having it delivered to them.
 
 ### Technologies Used
 <ol>
