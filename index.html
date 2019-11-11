@@ -11,20 +11,22 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container-fluid">
         <h1><b>PAZZI PER LA PIZZA</b></h1>
-        <div class="background">
-            <p style="text-align: center;"><strong>PIZZACHU</strong></p>
-            <img src="images/pizza.jpg" alt="Pizza making" width="1100vh">
-        </div>
-        <p style="text-align: center;"><strong>I CHEESE YOU</strong></p>
-    </div>
+    <div class="navbar">
     <ul>
         <li><a href="#home">HOME</a></li>
         <li><a href="#menu">MENU</a></li>
         <li><a href="#contact">CONTACT US</a></li>
     </ul>
-    </div><br><br><br><br>
+</div>
+<div class="background">
+        <p style="text-align: center;"><strong>PIZZACHU</strong></p>
+        <img src="images/pizza.jpg" alt="Pizza making">
+    </div>
+    <p style="text-align: center;"><strong>I CHEESE YOU</strong></p>
+</div>
+    </div>
     <div class="container-fluid">
         <div id="menu">
             <div class="row">
@@ -32,11 +34,11 @@
                     <div class="card" class="card-img-top">
                         <img src="images/pizza1.jpg" alt="Meat lovers pizza" class="mx-auto w-100">
                         <div class="card-body">
-                            <p style="font-size: 1.5rem;"><strong>Meat Lovers</strong></p>
+                            <p id="ml" style="font-size: 1.5rem;"><strong>Meat Lovers</strong></p>
                             <p>Smoked Ham, Ground Beef, Pepperoni, Italian Sausage and Chicken</p>
                             <p class="order"><b>ORDER!!!</b></p>
                             <form>
-                                <select id="size" class="form-control" placeholder="choose size">
+                                <select class="size" class="form-control" placeholder="choose size">
                                     <option value="">Choose size</option>
                                     <option value="small">Small</option>
                                     <option value="medium">Medium</option>
@@ -44,7 +46,7 @@
                                 </select>
                             </form> <br>
                             <form>
-                                <select id="crust" class="form-control" placeholder="Choose crust">
+                                <select class="crust" class="form-control" placeholder="Choose crust">
                                     <option value="">Choose crust</option>
                                     <option value="crispy">Crispy</option>
                                     <option value="gluten free">Gluten free</option>
@@ -52,14 +54,14 @@
                                 </select>
                             </form> <br>
                             <form>
-                                <select id="toppings" class="form-control" placeholder="Extra toppings">
+                                <select class="toppings" class="form-control" placeholder="Extra toppings">
                                     <option value="">Choose extra toppings</option>
                                     <option value="">Extra cheese</option>
                                     <option value="Bacon">Bacon</option>
                                     <option value="pepper">pepper</option>
                                 </select>
                                 <br>
-                                <label style="text-align: center;" id="btn-addtocart"
+                                <label style="text-align: center;" id="btn-addtocart-ml"
                                     class="btn-success form-control">Add to Cart</label>
                             </form>
                         </div>
@@ -74,7 +76,7 @@
                             </p>
                             <p class="order"><b>ORDER!!!</b></p>
                             <form>
-                                <select id="size" class="form-control" placeholder="choose size">
+                                <select class="size" class="form-control" placeholder="choose size">
                                     <option value="">Choose size</option>
                                     <option value="small">Small</option>
                                     <option value="medium">Medium</option>
@@ -82,7 +84,7 @@
                                 </select>
                             </form> <br>
                             <form>
-                                <select id="crust" class="form-control" placeholder="Choose crust">
+                                <select class="crust" class="form-control" placeholder="Choose crust">
                                     <option value="">Choose crust</option>
                                     <option value="crispy">Crispy</option>
                                     <option value="gluten free">Gluten free</option>
@@ -90,14 +92,14 @@
                                 </select>
                             </form> <br>
                             <form>
-                                <select id="toppings" class="form-control" placeholder="Extra toppings">
+                                <select class="toppings" class="form-control" placeholder="Extra toppings">
                                     <option value="">Choose extra toppings</option>
                                     <option value="">Extra cheese</option>
                                     <option value="Bacon">Bacon</option>
                                     <option value="pepper">pepper</option>
                                 </select>
                                 <br>
-                                <label style="text-align: center;" id="btn-addtocart"
+                                <label style="text-align: center;" id="btn-addtocart-vegan"
                                     class="btn-success form-control">Add to Cart</label>
                             </form>
                         </div>
@@ -111,7 +113,7 @@
                             <p>Shredded Ham,Mozarella and Pineapple</p>
                             <p class="order"><b>ORDER!!!</b></p>
                             <form>
-                                <select id="size" class="form-control" placeholder="choose size">
+                                <select class="size" class="form-control" placeholder="choose size">
                                     <option value="size">Choose size</option>
                                     <option value="small">Small</option>
                                     <option value="medium">Medium</option>
@@ -119,7 +121,7 @@
                                 </select>
                             </form> <br>
                             <form>
-                                <select id="crust" class="form-control" placeholder="Choose crust">
+                                <select class="crust" class="form-control" placeholder="Choose crust">
                                     <option value="">Choose crust</option>
                                     <option value="crispy">Crispy</option>
                                     <option value="gluten free">Gluten free</option>
@@ -127,14 +129,14 @@
                                 </select>
                             </form> <br>
                             <form>
-                                <select id="toppings" class="form-control" placeholder="Extra toppings">
+                                <select class="toppings" class="form-control" placeholder="Extra toppings">
                                     <option value="">Choose extra toppings</option>
                                     <option value="">Extra cheese</option>
                                     <option value="Bacon">Bacon</option>
                                     <option value="pepper">pepper</option>
                                 </select>
                                 <br>
-                                <label style="text-align: center;" id="btn-addtocart"
+                                <label style="text-align: center;" id="btn-addtocart-hawaii"
                                     class="btn-success form-control">Add To Cart</label>
                             </form>
                         </div>
@@ -149,7 +151,7 @@
                                 and Oregano on yourchoice of base, garnished with Mint Yoghurt and Lemon wedge.</p>
                             <p class="order"><b>ORDER!!!</b></p>
                             <form>
-                                <select id="size" class="form-control" placeholder="choose size">
+                                <select class="size" class="form-control" placeholder="choose size">
                                     <option value="">Choose size</option>
                                     <option value="small">Small</option>
                                     <option value="medium">Medium</option>
@@ -158,7 +160,7 @@
                             </form>
                             <br>
                             <form>
-                                <select id="crust" class="form-control" placeholder="Choose crust">
+                                <select class="crust" class="form-control" placeholder="Choose crust">
                                     <option value="">Choose crust</option>
                                     <option value="crispy">Crispy</option>
                                     <option value="gluten free">Gluten free</option>
@@ -167,14 +169,14 @@
                             </form>
                             <br>
                             <form>
-                                <select id="toppings" class="form-control" placeholder="Extra toppings">
+                                <select class="toppings" class="form-control" placeholder="Extra toppings">
                                     <option value="">Choose extra toppings</option>
                                     <option value="">Extra cheese</option>
                                     <option value="Bacon">Bacon</option>
                                     <option value="pepper">pepper</option>
                                 </select>
                                 <br>
-                                <label style="text-align: center;" id="btn-addtocart"
+                                <label style="text-align: center;" id="btn-addtocart-md"
                                     class="btn-success form-control">Add to Cart</label>
                             </form>
                         </div>
@@ -183,7 +185,7 @@
             </div>
         </div>
         <section>
-            <div id="Checkout">
+            <div id="checkout">
                 <div id="pick-del">
                     <p>Would you prefer pickup or delivery?</p>
                     <div class="btn-group" data-toggle="button">
