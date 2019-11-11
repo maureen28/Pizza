@@ -1,47 +1,45 @@
+//UI
 function Pizza{
-    this.name ="name";
+    this.name = "name";
     this.size = size;
     this.crust = crust;
     this.toppings = toppings;
 }
-
 // crust
-Pizza.prototype.Crust = function() { 
-    if(crust==="glutenFree"){
-        crust=120
-    }else if(crust==="stuffed"){
-        crust=100
-    } else if(crust==="crispy"){
-        crust=80
+Pizza.prototype.Crust = function () {
+    if (crust === "glutenFree") {
+        crust = 120
+    } else if (crust === "stuffed") {
+        crust = 100
+    } else if (crust === "crispy") {
+        crust = 80
+    }
+    return crust;
 }
-return crust;
-}
-
 // size
-Pizza.prototype.size = function() {
-    if(size==="small"){
-        size=500
-    }else if(size==="medium"){
-        size=750
-    } else if(size==="large"){
-        size=1000
+Pizza.prototype.size = function () {
+    if (size === "small") {
+        size = 500
+    } else if (size === "medium") {
+        size = 750
+    } else if (size === "large") {
+        size = 1000
+    }
+    return size;
 }
-return size;
-}
-
 // toppings
-Pizza.prototype.toppings = function() {
-    if(toppings==="bacon"){
-        toppings=50
-    }else if(toppings==="extraCheese"){
-        toppings=40
-    } else if(toppings==="pepper"){
-        size=30
+Pizza.prototype.toppings = function () {
+    if (toppings === "bacon") {
+        toppings = 50
+    } else if (toppings === "extraCheese") {
+        toppings = 40
+    } else if (toppings === "pepper") {
+        size = 30
     }
     return toppings;
 }
-    // Pizza(names)
-function Pizza{
+// Pizza(names)
+/*function Pizza{
     this.name = "name";
     this.size = size;
     this.crust = crust;
@@ -87,12 +85,12 @@ var vegan={name:"vegan", properties: [size,crust,toppings]}
 var magharitta={name:"magharitta", properties: [size,crust,toppings]}*/
 
 //jQuery
-$(document).ready(function(event){
-    event.preventDefault()
-    $("#crust").change(function(){
-        Pizza("#xx").val()
-    $("#ul option:selected").text(Size)
-    });
-});
+$(document).ready(function (event) {
+    $("#btn-addtocart").click(function (event) {
+        event.preventDefault()
+        var size = $('#select[name="size"]').val()
+        var crust = $('#select[name="crust"]').val()
+        var toppings = $('#select[name="crust"]').val()
+    }
 
-
+var total=("crust"+"size"+"toppings")
