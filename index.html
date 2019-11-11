@@ -11,8 +11,8 @@
 </head>
 
 <body>
-    <div class="container">
-        <h1><b>PAZZI PER LA PIZZA</b></h1>
+    <div class="container-fluid">
+        <h1><b>PAZZI PER LA PIZZA</b></h1><hr>
         <div class="navbar">
             <ul>
                 <li><a href="#home">HOME</a></li>
@@ -20,13 +20,11 @@
                 <li><a href="#contact">CONTACT US</a></li>
             </ul>
         </div>
-        <div class="background">
-            <p style="text-align: center;"><strong>PIZZACHU</strong></p>
-            <img src="images/pizza.jpg" alt="Pizza making">
-            <p style="text-align: center;"><strong>I CHEESE YOU</strong></p>
-        </div><br>
-    </div>
-    </div>
+        <p class="piz"><strong>PIZZACHU</strong></p>
+        <img src="images/pizza.jpg" id="img1" alt="Pizza making">
+        <p class="piz" ><strong>I CHEESE YOU</strong></p>
+    </div><br>
+
     <div class="container-fluid">
         <div id="menu">
             <div class="row">
@@ -67,8 +65,8 @@
                             </form>
                             <br>
                             <form>
-                            <label style="text-align: center;" id="btn-addtocart-ml"
-                                class="btn-success form-control">Add to Cart</label>
+                                <label style="text-align: center;" id="btn-addtocart-ml"
+                                    class="btn-success form-control">Add to Cart</label>
                             </form>
                         </div>
                     </div>
@@ -110,8 +108,8 @@
 
                             </form> <br>
                             <form>
-                            <label style="text-align: center;" id="btn-addtocart-vegan"
-                                class="btn-success form-control">Add to Cart</label>
+                                <label style="text-align: center;" id="btn-addtocart-vegan"
+                                    class="btn-success form-control">Add to Cart</label>
                             </form>
                         </div>
                     </div>
@@ -152,8 +150,8 @@
 
                             </form><br>
                             <form>
-                            <label style="text-align: center;" id="btn-addtocart-hawaii"
-                                class="btn-success form-control">Add To Cart</label>
+                                <label style="text-align: center;" id="btn-addtocart-hawaii"
+                                    class="btn-success form-control">Add To Cart</label>
                             </form>
                         </div>
                     </div>
@@ -196,68 +194,74 @@
                                 <input class="input" type="number" class="form-control" placeholder="Number of Pizzas">
                             </form> <br>
                             <form>
-                            <label style="text-align: center;" id="btn-addtocart-md"
-                                class="btn-success form-control">Add to Cart</label>
+                                <label style="text-align: center;" id="btn-addtocart-md"
+                                    class="btn-success form-control">Add to Cart</label>
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-                <div class="container-fluid">
+        <div class="container">
             <div id="checkout">
-                <div id="Order summary">ORDER SUMMARY</div>
-                <div id="pick-del">
-                    <p>Would you prefer pickup or delivery?</p>
-                        <label class="btn-success form-control">Pick-up</label><br>
-                        <label class="btn-primary form-control">Delivery </label>
-                        <p>Where are we delivering to?</p>
-                        <form>
-                            <select class="form-control" placeholder="Choose Location">
-                                <option value="location">Choose Location</option>
-                                <option value="location">Spring Valley</option>
-                                <option value="location">Prestige</option>
-                                <option value="location">Other</option>
-                            </select>
-                        </form>
+                <div id="Order">ORDER SUMMARY</div>
+                    <p >Would you prefer pickup or delivery?</p>
+                    <div id="pick">
+                            <div class="btn-group" data-toggle="buttons">
+                    <label type="radio" name="rd1" class="btn-success form-control">Pick-up</label><br>
+                    <label type="radio" name="rd2" class="btn-primary form-control">Delivery </label>
+                </div>
+                    <p>Where are we delivering to?</p>
+                    <form>
+                        <select class="form-control-sm-3" placeholder="Choose Location">
+                            <option value="location">Choose Location</option>
+                            <option value="location">Spring Valley</option>
+                            <option value="location">Prestige</option>
+                            <option value="location">Other</option>
+                        </select>
+                    </form>
+                </div>
+            </div>
+            </div><br>
+            <div class="container-fluid">
+                <div id="contact">
+                    <h3><strong>CONTACT US</strong></h3>
+                    <hr>
+                    <div class="row">
+                        <div class="contact">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <input style="background-color: transparent;" type="text" class="form-control" id="Name" placeholder="NAME">
+                                </div>
+                                <div class="form-group">
+                                    <input  style="background-color: transparent;" type="text" class="form-control" id="Email" placeholder="EMAIL">
+                                </div>
+                                <textarea  style="background-color: transparent;" name="message" id="message" cols="45" rows="10"
+                                    placeholder="COMMENT"></textarea><br>
+                                <input type="submit" class="btn btn-success"></button>
+                                </form>
+                            </div>
+                        </div>
+                        <div style="text-align: center;" class="col-md-4">
+                            <p>EMAIL</p>
+                            <p>info@pazzalapizza.com</p>
+                            <hr>
+                            <p>TELEPHONE</p>
+                            <p>0799280333</p>
+                            <hr>
+                            <p>VISIT</p>
+                            <p>MARKET MANSION</p>
+                            <P>00200,NAIROBI</P>
+                        </div>
+                        <div class="col-md-4">
+                            <p>Visit our store location:</p>
+                            <img src="images/visit.jpg" alt="Visit store Location at Market Mansion">
+                        </div>
                     </div>
                 </div>
-        <div class="container-fluid">
-                <h3><strong>CONTACT US</strong></h3><hr>
-            <div class="row">
-            <div class="contact">
-                 <div class="col-md-4">
-                        <div class="form-group">
-                    <input type="text" class="form-control" id="Name" placeholder="NAME">
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" id="Email" placeholder="EMAIL">
-                </div> 
-                    <textarea name="message" id="message" cols="45" rows="10" placeholder="COMMENT"></textarea><br>
-                    <input type="submit" class="btn btn-success"></button>
-                </form>
             </div>
-            </div>
-            <div style="text-align: center;" class="col-md-4">
-            <p>EMAIL</p>
-            <p>info@pazzalapizza.com</p>
-            <hr>
-            <p>TELEPHONE</p>
-            <p>0799280333</p>
-            <hr>
-            <p>VISIT</p>
-            <p>MARKET MANSION</p>
-            <P>00200,NAIROBI</P>
-            </div>
-            <div class="col-md-4">
-                <p>Visit our store location:</p>
-            <img src="images/visit.jpg" alt="Visit store Location at Market Mansion">
-        </div>
+       
     </div>
-    </div>
-    </div>
-    </div>
-    <hr />
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/scripts.js"></script>
 </body>

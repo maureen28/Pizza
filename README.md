@@ -5,6 +5,9 @@
 ### Description
 This web application lets users build a customized pizza from them being able to choose the size, crust type and toppings they want.The user is also able to choose between picking up their pizza or having it delivered to them.
 
+### Screenshot.
+<img src="./images/screenshot.jpg" alt="pazzilapizza" width="400"/>
+
 ### Technologies Used
 <ol>
 <li>HTML</li>

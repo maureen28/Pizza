@@ -188,3 +188,33 @@ function Crust() {
                                         $("#checkout").text(input)
                                     })
                                 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                function myFunction(myEle) {
+                                    var x = document.getElementById("myDIV");
+                                    x.innerHTML = "This is category " + myEle.value;
+                                  }
