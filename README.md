@@ -3,7 +3,7 @@
 ## Author: Maureen Murimi
 
 ### Description
-
+This web application helps users order the pizza they want 
 
 ### Technologies Used
 <ol>

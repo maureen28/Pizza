@@ -91,6 +91,11 @@ $(document).ready(function (event) {
         var size = $('#select[name="size"]').val()
         var crust = $('#select[name="crust"]').val()
         var toppings = $('#select[name="crust"]').val()
+        var total = ("crust" + "size" + "toppings").val()
     }
 
-var total=("crust"+"size"+"toppings")
+    var checkout = "<li>"+size+" "+crust+"+"+toppings + <br> Total Ksh ."+total+"</li>";
+    $("#list").append();
+
+
+
