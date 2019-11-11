@@ -5,14 +5,30 @@ function Pizza(name) {
     this.toppings = [];
 }
 // crust
-var glutenFree={
-    name:"glutenFree",price:120,
+function Crust(){
+    var crust;
+    if(crust==="glutenFree"){
+        crust=120
+    }else if(crust==="stuffed"){
+        crust=100
+    } else if(crust==="crispy"){
+        crust=80
 }
-var stuffed={
-    name:"stuffed",price:80,}
-var crispy={
-    name:"crispy", price:100,
+return crust
+
+// size
+function Size(){
+    var size;
+    if(size==="small"){
+        size=500
+    }else if(size==="medium"){
+        size=750
+    } else if(size==="large"){
+        size=1000
 }
+return Size
+}
+//Toppings
 function Size(large,small,medium){
 this.large=large
 this.medium=medium
