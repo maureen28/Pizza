@@ -4,15 +4,15 @@ function Pizza(name) {
     this.crust = [];
     this.toppings = [];
 }
-// Pizza(name)
-function hawaiannPizza{
+// Pizza(names)
+function HawaiannPizza{
     this.name = "Hawaiann";
     this.size = size;
     this.crust = crust;
     this.toppings = toppings;
 }
 hawaiannPizza.prototype=function(){
-    return"Name"+"Size"+"Crust"+"Toppings"
+    return"Name"+""+"Size"+""+"Crust"+""+"Toppings"
 }
 
 function MediterraneanPizza{
@@ -21,8 +21,28 @@ function MediterraneanPizza{
     this.crust = crust;
     this.toppings = toppings;
 }
-hawaiannPizza.prototype=function(){
-    return"Name"+"Size"+"Crust"+"Toppings"
+MediterraneanPizza.prototype=function(){
+    return"Name"+""+"Size"+""+"Crust"+""+"Toppings"
+}
+
+function MeatLoversPizza{
+    this.name = "MeatLovers";
+    this.size = size;
+    this.crust = crust;
+    this.toppings = toppings;
+}
+MeatLoversPizza.prototype=function(){
+    return"Name"+""+"Size"+""+"Crust"+""+"Toppings"
+}
+
+function VeganPizza{
+    this.name = "Vegan";
+    this.size = size;
+    this.crust = crust;
+    this.toppings = toppings;
+}
+VeganPizza.prototype=function(){
+    return"Name"+""+"Size"+""+"Crust"+""+"Toppings"
 }
 
 // crust
@@ -66,10 +86,10 @@ function Crust(stuffed,crispy,glutenFree){
     this.crispy=crispy
     }
 
-var hawaiannPizza={name:"Hawaiian Pizza", properties: [size,crust,toppings]}
+/*var hawaiannPizza={name:"Hawaiian Pizza", properties: [size,crust,toppings]}
 var meatLovers={name:"meatLovers", properties: [size,crust,toppings]}
 var vegan={name:"vegan", properties: [size,crust,toppings]}
-var magharitta={name:"magharitta", properties: [size,crust,toppings]}
+var magharitta={name:"magharitta", properties: [size,crust,toppings]}*/
 
 //jQuery
 $(document).ready(function(event){
