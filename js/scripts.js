@@ -67,24 +67,20 @@ function Size(){
     } else if(size==="large"){
         size=1000
 }
-return Size
-}
-//Toppings
-function Size(large,small,medium){
-this.large=large
-this.medium=medium
-this.small=small
-}
-function Toppings(bacon,pepper,extra_cheese){
-    this.bacon=bacon
-    this.pepper=pepper
-    this.extra_cheese=extra_cheese
-}
-function Crust(stuffed,crispy,glutenFree){
-    this.stuffed=stuffed
-    this.glutenFree=glutenFree
-    this.crispy=crispy
+return size
+
+// toppings
+function Toppings(){
+    var toppings;
+    if(toppings==="bacon"){
+        toppings=50
+    }else if(toppings==="extraCheese"){
+        toppings=40
+    } else if(toppings==="pepper"){
+        size=30
     }
+    return toppings
+
 
 /*var hawaiannPizza={name:"Hawaiian Pizza", properties: [size,crust,toppings]}
 var meatLovers={name:"meatLovers", properties: [size,crust,toppings]}
@@ -94,8 +90,8 @@ var magharitta={name:"magharitta", properties: [size,crust,toppings]}*/
 //jQuery
 $(document).ready(function(event){
     event.preventDefault()
-    $("#o").change(function(){
-PizzaSelecteed("#xx").val()
+    $("#crust").change(function(){
+        Pizza("#xx").val()
     $("#ul option:selected").text(Size)
     });
 });
