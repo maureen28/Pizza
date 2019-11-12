@@ -22,7 +22,7 @@ This web application lets users build a customized pizza from them being able to
 <li>Open the folder you have cloned</li>
 <li>Open <ins>index.html</ins> on your browser.</li>
 </ul>
-<strong>LIVE LINK:</strong>
+<strong>LIVE LINK:https://maureen28.github.io/Pizza/.</strong>
 
 ### Behaviour Driven Development
 <ol type="I">
