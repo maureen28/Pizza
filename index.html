@@ -12,7 +12,8 @@
 
 <body>
     <div class="container-fluid">
-        <h1><b>PAZZI PER LA PIZZA</b></h1><hr>
+        <h1><b>PAZZI PER LA PIZZA</b></h1>
+        <hr>
         <div class="navbar">
             <ul>
                 <li><a href="#home">HOME</a></li>
@@ -22,7 +23,7 @@
         </div>
         <p class="piz"><strong>PIZZACHU</strong></p>
         <img src="images/pizza.jpg" id="img1" alt="Pizza making">
-        <p class="piz" ><strong>I CHEESE YOU</strong></p>
+        <p class="piz"><strong>I CHEESE YOU</strong></p>
     </div><br>
 
     <div class="container-fluid">
@@ -35,38 +36,28 @@
                             <p style="font-size: 1.5rem;"><strong>Meat Lovers</strong></p>
                             <p>Smoked Ham, Ground Beef, Pepperoni, Italian Sausage and Chicken</p>
                             <p class="order"><b>ORDER!!!</b></p>
-                            <form>
+                            <form id="meat">
                                 <select class="size" class="form-control" placeholder="choose size">
                                     <option value="">Choose size</option>
                                     <option value="small">Small</option>
                                     <option value="medium">Medium</option>
                                     <option value="large">Large</option>
-                                </select>
-                            </form> <br>
-                            <form>
+                                </select><br><br>
                                 <select class="crust" class="form-control" placeholder="Choose crust">
                                     <option value="">Choose crust</option>
                                     <option value="crispy">Crispy</option>
                                     <option value="gluten free">Gluten free</option>
                                     <option value="stuffed">Stuffed</option>
-                                </select>
-                            </form> <br>
-                            <form>
+                                </select><br><br>
                                 <select class="toppings" class="form-control" placeholder="Extra toppings">
-                                    <option value="">Choose extra toppings</option>
-                                    <option value="">Extra cheese</option>
-                                    <option value="Bacon">Bacon</option>
+                                        <option value="">Choose extra toppings</option>
+                                    <option value="cheese">Extra cheese</option>
+                                    <option value="bacon">Bacon</option>
                                     <option value="pepper">pepper</option>
-                                </select>
-                            </form><br>
-                            <form>
-                                <input type="number" class="form-control" placeholder="Number of Pizzas">
-
-                            </form>
-                            <br>
-                            <form>
-                                <label style="text-align: center;" id="btn-addtocart-ml"
-                                    class="btn-success form-control">Add to Cart</label>
+                                </select><br><br>
+                                <input type="number" id="number" class="form-control" placeholder="Number of Pizzas"><br><br>
+                                <button type="submit" style="text-align: center;" id="btn-addtocart-ml"
+                                    class="btn-success form-control">Add to Cart</button>
                             </form>
                         </div>
                     </div>
@@ -79,37 +70,28 @@
                             <p>Corn, Cherry Tomatoes, Brocolli, Garlic, Jalapeno and Basil, garnished with Cashew Cream
                             </p>
                             <p class="order"><b>ORDER!!!</b></p>
-                            <form>
+                            <form id="vegan">
                                 <select class="size" class="form-control" placeholder="choose size">
                                     <option value="">Choose size</option>
                                     <option value="small">Small</option>
                                     <option value="medium">Medium</option>
                                     <option value="large">Large</option>
-                                </select>
-                            </form> <br>
-                            <form>
+                                </select><br><br>
                                 <select class="crust" class="form-control" placeholder="Choose crust">
                                     <option value="">Choose crust</option>
                                     <option value="crispy">Crispy</option>
                                     <option value="gluten free">Gluten free</option>
                                     <option value="stuffed">Stuffed</option>
-                                </select>
-                            </form> <br>
-                            <form>
+                                </select><br><br>
                                 <select class="toppings" class="form-control" placeholder="Extra toppings">
                                     <option value="">Choose extra toppings</option>
                                     <option value="">Extra cheese</option>
                                     <option value="Bacon">Bacon</option>
                                     <option value="pepper">pepper</option>
-                                </select>
-                            </form><br>
-                            <form>
-                                <input type="number" class="form-control" placeholder="Number of Pizzas">
-
-                            </form> <br>
-                            <form>
-                                <label style="text-align: center;" id="btn-addtocart-vegan"
-                                    class="btn-success form-control">Add to Cart</label>
+                                </select><br><br>
+                                <input type="number" class="form-control" placeholder="Number of Pizzas"><br><br>
+                                <button type="submit" style="text-align: center;" id="btn-addtocart-vegan"
+                                    class="btn-success form-control">Add to Cart</button>
                             </form>
                         </div>
                     </div>
@@ -121,37 +103,28 @@
                             <p style="font-size: 1.5rem;"><strong>Hawaiian Pizza</strong></p>
                             <p>Shredded Ham,Mozarella and Pineapple</p>
                             <p class="order"><b>ORDER!!!</b></p>
-                            <form>
+                            <form id="hawaii">
                                 <select class="size" class="form-control" placeholder="choose size">
                                     <option value="size">Choose size</option>
                                     <option value="small">Small</option>
                                     <option value="medium">Medium</option>
                                     <option value="large">Large</option>
-                                </select>
-                            </form> <br>
-                            <form>
+                                </select><br><br>
                                 <select class="crust" class="form-control" placeholder="Choose crust">
                                     <option value="">Choose crust</option>
                                     <option value="crispy">Crispy</option>
                                     <option value="gluten free">Gluten free</option>
                                     <option value="stuffed">Stuffed</option>
-                                </select>
-                            </form> <br>
-                            <form>
+                                </select><br><br>
                                 <select class="toppings" class="form-control" placeholder="Extra toppings">
                                     <option value="">Choose extra toppings</option>
-                                    <option value="">Extra cheese</option>
-                                    <option value="Bacon">Bacon</option>
-                                    <option value="pepper">pepper</option>
-                                </select>
-                            </form><br>
-                            <form>
-                                <input type="number" class="form-control" placeholder="Number of Pizzas">
-
-                            </form><br>
-                            <form>
-                                <label style="text-align: center;" id="btn-addtocart-hawaii"
-                                    class="btn-success form-control">Add To Cart</label>
+                                    <option value="">Extra cheese@60</option>
+                                    <option value="Bacon">Bacon@50</option>
+                                    <option value="pepper">pepper@40</option>
+                                </select><br><br>
+                                <input type="number" class="form-control" placeholder="Number of Pizzas"><br><br>
+                                <button type="submit" style="text-align: center;" id="btn-addtocart-hawaii"
+                                    class="btn-success form-control">Add To Cart</button>
                             </form>
                         </div>
                     </div>
@@ -164,38 +137,29 @@
                             <p>House Cooked Lamb roasted in Mediterranean spices, Tomatoes, Red Onions,Tomatoes, Feta
                                 and Oregano on yourchoice of base, garnished with Mint Yoghurt and Lemon wedge.</p>
                             <p class="order"><b>ORDER!!!</b></p>
-                            <form>
+                            <form id="ml">
                                 <select class="size" class="form-control" placeholder="choose size">
                                     <option value="">Choose size</option>
                                     <option value="small">Small</option>
                                     <option value="medium">Medium</option>
                                     <option value="large">Large</option>
-                                </select>
-                            </form>
-                            <br>
-                            <form>
+                                </select><br><br>
                                 <select class="crust" class="form-control" placeholder="Choose crust">
                                     <option value="">Choose crust</option>
                                     <option value="crispy">Crispy</option>
                                     <option value="gluten free">Gluten free</option>
                                     <option value="stuffed">Stuffed</option>
-                                </select>
-                            </form>
-                            <br>
-                            <form>
+                                </select><br><br>
                                 <select class="toppings" class="form-control" placeholder="Extra toppings">
                                     <option value="">Choose extra toppings</option>
-                                    <option value="">Extra cheese</option>
-                                    <option value="Bacon">Bacon</option>
-                                    <option value="pepper">pepper</option>
-                                </select>
-                            </form><br>
-                            <form>
-                                <input class="input" type="number" class="form-control" placeholder="Number of Pizzas">
-                            </form> <br>
-                            <form>
-                                <label style="text-align: center;" id="btn-addtocart-md"
-                                    class="btn-success form-control">Add to Cart</label>
+                                    <option value="">Extra cheese@60</option>
+                                    <option value="Bacon">Bacon @50</option>
+                                    <option value="pepper">pepper@40</option>
+                                </select><br><br>
+                                <input class="input" type="number" class="form-control"
+                                    placeholder="Number of Pizzas"><br><br>
+                                <button type="submit" style="text-align: center;" id="btn-addtocart-md"
+                                    class="btn-success form-control">Add to Cart</button>
                             </form>
                         </div>
                     </div>
@@ -204,63 +168,69 @@
         </div>
         <div class="container">
             <div id="checkout">
+                <span id="check"></span>
                 <div id="Order">ORDER SUMMARY</div>
-                    <p >Would you prefer pickup or delivery?</p>
-                    <div id="pick">
-                            <div class="btn-group" data-toggle="buttons">
-                    <label type="radio" name="rd1" class="btn-success form-control">Pick-up</label><br>
-                    <label type="radio" name="rd2" class="btn-primary form-control">Delivery </label>
-                </div>
+                <p>Would you prefer pickup or delivery?</p>
+                <div id="pick">
+                    <div class="btn-group" data-toggle="buttons">
+                        <button type="radio" name="rd1" class="btn-success form-control">Pick-up</button><br>
+                        <button type="radio" name="rd2" class="btn-primary form-control">Delivery</button>
+                    </div><br><br>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="Email" placeholder="ENTER EMAIL">
+                    </div>
                     <p>Where are we delivering to?</p>
                     <form>
                         <select class="form-control-sm-3" placeholder="Choose Location">
                             <option value="location">Choose Location</option>
-                            <option value="location">Spring Valley</option>
-                            <option value="location">Prestige</option>
-                            <option value="location">Other</option>
+                            <option value="location">Spring Valley @ksh 150</option>
+                            <option value="location">Prestige @ksh 100</option>
+                            <option value="location">Other @ksh 200</option>
                         </select>
                     </form>
                 </div>
             </div>
-            </div><br>
-            <div class="container-fluid">
-                <div id="contact">
-                    <h3><strong>CONTACT US</strong></h3>
-                    <hr>
-                    <div class="row">
-                        <div class="contact">
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <input style="background-color: transparent;" type="text" class="form-control" id="Name" placeholder="NAME">
-                                </div>
-                                <div class="form-group">
-                                    <input  style="background-color: transparent;" type="text" class="form-control" id="Email" placeholder="EMAIL">
-                                </div>
-                                <textarea  style="background-color: transparent;" name="message" id="message" cols="45" rows="10"
-                                    placeholder="COMMENT"></textarea><br>
-                                <input type="submit" class="btn btn-success"></button>
-                                </form>
-                            </div>
-                        </div>
-                        <div style="text-align: center;" class="col-md-4">
-                            <p>EMAIL</p>
-                            <p>info@pazzalapizza.com</p>
-                            <hr>
-                            <p>TELEPHONE</p>
-                            <p>0799280333</p>
-                            <hr>
-                            <p>VISIT</p>
-                            <p>MARKET MANSION</p>
-                            <P>00200,NAIROBI</P>
-                        </div>
+        </div><br>
+        <div class="container-fluid">
+            <div id="contact">
+                <h3><strong>CONTACT US</strong></h3>
+                <hr>
+                <div class="row">
+                    <div class="contact">
                         <div class="col-md-4">
-                            <p>Visit our store location:</p>
-                            <img src="images/visit.jpg" alt="Visit store Location at Market Mansion">
+                            <div class="form-group">
+                                <input style="background-color: transparent;" type="text" class="form-control" id="Name"
+                                    placeholder="NAME">
+                            </div>
+                            <div class="form-group">
+                                <input style="background-color: transparent;" type="text" class="form-control"
+                                    id="Email" placeholder="EMAIL">
+                            </div>
+                            <textarea style="background-color: transparent;" name="message" id="message" cols="45"
+                                rows="10" placeholder="COMMENT"></textarea><br>
+                            <input type="submit" class="btn btn-success"></button>
+                            </form>
                         </div>
+                    </div>
+                    <div style="text-align: center;" class="col-md-4">
+                        <p>EMAIL</p>
+                        <p>info@pazzalapizza.com</p>
+                        <hr>
+                        <p>TELEPHONE</p>
+                        <p>0799280333</p>
+                        <hr>
+                        <p>VISIT</p>
+                        <p>MARKET MANSION</p>
+                        <P>00200,NAIROBI</P>
+                    </div>
+                    <div class="col-md-4">
+                        <p>Visit our store location:</p>
+                        <img src="images/visit.jpg" alt="Visit store Location at Market Mansion">
                     </div>
                 </div>
             </div>
-       
+        </div>
+
     </div>
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/scripts.js"></script>

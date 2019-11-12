@@ -1,220 +1,195 @@
-//UI
-function Pizza(name) {
-    this.name = name;
-    this.size = [];
-    this.crust = [];
-    this.toppings = [];
-    this.number=[];
-}
+////businesslogic
+
+
 // Pizza(names)
-function HawaiannPizza(){
-    this.name = "Hawaiann";
+function MeatLoversPizza(name, size, crust, toppings, number, ) {
+    this.name = name;
     this.size = size;
     this.crust = crust;
     this.toppings = toppings;
-    this.number=number;
+    this.number = number;
+    this.deliveryPrice = delivery
 }
-hawaiannPizza.prototype = function () {
+MeatLoversPizza.prototype.details = function () {
     return "Name" + "" + "Size" + "" + "Crust" + "" + "Toppings"
 }
-function MediterraneanPizza(){
-    this.name = "Mediterranean";
+MeatLoversPizza.prototype.details = function () {
+    return (this.name + this.size + this.toppings + this.crust) * this.number
+}
+function MediterraneanPizza(name, size, crust, toppings, number) {
+    this.name = name;
     this.size = size;
     this.crust = crust;
     this.toppings = toppings;
-    this.number=number;
+    this.number = number;
 }
-MediterraneanPizza.prototype = function () {
+MediterraneanPizza.prototype.details = function () {
     return "Name" + "" + "Size" + "" + "Crust" + "" + "Toppings"
 }
-function MeatLoversPizza(){
-    this.name = "MeatLovers";
+MediterraneanPizza.prototype.details = function () {
+    return (this.name + this.size + this.toppings + this.crust) * this.number
+}
+function HawaiianPizza(name, size, crust, toppings, number) {
+    this.name = name;
     this.size = size;
     this.crust = crust;
     this.toppings = toppings;
-    this.number=number;
+    this.number = number;
 }
-MeatLoversPizza.prototype = function () {
+HawaiianPizza.prototype.details = function () {
     return "Name" + "" + "Size" + "" + "Crust" + "" + "Toppings"
 }
-function VeganPizza(){
-    this.name = "Vegan";
+HawaiianPizza.prototype.details = function () {
+    return (this.name + this.size + this.toppings + this.crust) * this.number
+}
+function VeganPizza(name, size, crust, toppings, number) {
+    this.name = name;
     this.size = size;
     this.crust = crust;
     this.toppings = toppings;
-    this.number=number;
+    this.number = number;
 }
-VeganPizza.prototype = function () {
+VeganPizza.prototype.details = function () {
     return "Name" + "" + "Size" + "" + "Crust" + "" + "Toppings"
 }
+VeganPizza.prototype.details = function () {
+    return (this.name + this.size + this.toppings + this.crust) * this.number
+}
+
 // crust
-function Crust() {
-    var crust;
-    if (crust === "glutenFree") {
-        crust = 120
-    } else if (crust === "stuffed") {
-        crust = 100
-    } else if (crust === "crispy") {
-        crust = 80
+function crust() {
+var crustPrice
+    if (selectedCrust === "glutenFree") {
+        crustPrice = 120
+    } else if (selectedCrust === "stuffed") {
+        crustPrice = 100
+    } else if (selectedCrust === "crispy") {
+        crustPrice = 80
     }
-    return crust;
+    return crustPrice;
 }
-    // size
-    function Size() {
-        var size;
-        if (size === "small") {
-            size = 500
-        } else if (size === "medium") {
-            size = 750
-        } else if (size === "large") {
-            size = 1000
-        }
-        return size;
+
+// size
+function size() {
+var sizePrice
+    if (selectedSize === "small") {
+        sizePrice = 500
+    } else if (selectedSize === "medium") {
+        sizePrice  = 750
+    } else if (selectedSize === "large") {
+        sizePrice  = 1000
     }
-        // toppings
-        function Toppings() {
-            var toppings;
-            if (toppings === "bacon") {
-                toppings = 50
-            } else if (toppings === "extra-cheese") {
-                toppings = 60
-            } else if (size === "pepper") {
-                toppings = 40
-            }   return toppings;
-        }
-//Business Logic
-                //jQuery
-                //meatLovers
-                $(document).ready(function () {
-                    $("#btn-addtocart-ml").click(function () {
-                        $(".size").change(function () {
-                            size = $(".size option:selected").val();
-                            $("#checkout").text(size)
-                        })
-                    });
-                    $("#btn-addtocart-ml").click(function () {
-                        $(".crust").change(function () {
-                            size = $(".crust option:selected").val();
-                            $("#checkout").text(crust)
-                        })
-                    });
-                    $("#btn-addtocart-ml").click(function () {
-                        $(".toppings").change(function () {
-                            size = $(".toppings option:selected").val();
-                            $("#checkout").text(toppings)
-                        })
-                    });
-                    $("#btn-addtocart-ml").click(function () {
-                    $(".input").change(function () {
-                        size = $(".input option:selected").val();
-                        $("#checkout").text(input)
-                    })
-                });
-                    //meditarrenean
-                    $(document).ready(function () {
-                        $("#btn-addtocart-md").click(function () {
-                            $(".size").change(function () {
-                                size = $(".size option:selected").val();
-                                $("#checkout").text(size)
-                            })
-                        });
-                        $("#btn-addtocart-md").click(function () {
-                            $(".crust").change(function () {
-                                size = $(".crust option:selected").val();
-                                $("#checkout").text(crust)
-                            })
-                        });
-                        $("#btn-addtocart-md").click(function () {
-                            $(".toppings").change(function () {
-                                size = $(".toppings option:selected").val();
-                                $("#checkout").text(toppings)
-                            })
-                        });
-                        $("#btn-addtocart-md").click(function () {
-                            $(".input").change(function () {
-                                size = $(".input option:selected").val();
-                                $("#checkout").text(input)
-                            })
-                        });
-                        // hawaiian
-                        $(document).ready(function () {
-                            $("#btn-addtocart-hawaii").click(function () {
-                                $(".size").change(function () {
-                                    size = $(".size option:selected").val();
-                                    $("#checkout").text(size)
-                                })
-                            });
-                            $("#btn-addtocart-hawaii").click(function () {
-                                $(".crust").change(function () {
-                                    size = $(".crust option:selected").val();
-                                    $("#checkout").text(crust)
-                                })
-                            });
-                            $("#btn-addtocart-hawaii").click(function () {
-                                $(".toppings").change(function () {
-                                    size = $(".toppings option:selected").val();
-                                    $("#checkout").text(toppings)
-                                })
-                            });
-                            $("#btn-addtocart-hawaii").click(function () {
-                            $(".input").change(function () {
-                                size = $(".input option:selected").val();
-                                $("#checkout").text(input)
-                            })
-                        });
-                            //vegan
-                            $(document).ready(function () {
-                                $("#btn-addtocart-vegan").click(function () {
-                                    $(".size").change(function () {
-                                        size = $(".size option:selected").val();
-                                        $("#checkout").text(size)
-                                    })
-                                });
-                                $("#btn-addtocart-vegan").click(function () {
-                                    $(".crust").change(function () {
-                                        size = $(".crust option:selected").val();
-                                        $("#checkout").text(crust)
-                                    })
-                                });
-                                $("#btn-addtocart-vegan").click(function () {
-                                    $(".toppings").change(function () {
-                                        size = $(".toppings option:selected").val();
-                                        $("#checkout").text(toppings)
-                                    })
-                                });
-                                $("#btn-addtocart-vegan").click(function () {
-                                    $(".input").change(function () {
-                                        size = $(".input option:selected").val();
-                                        $("#checkout").text(input)
-                                    })
-                                });
+    return sizePrice ;
+}
+// toppings
+function toppings() {
+var toppingsPrice
+    if (selectedToppings === "bacon") {
+        toppingsPrice = 50
+    } else if (selectedToppings === "extra-cheese") {
+        toppingsprice = 60
+    } else if (selectedToppings === "pepper") {
+        toppingsPrice = 40
+    } return toppingsPrice;
+}
+//Hawaiann total price
+function totalPizzaPriceHawaiian() {
+    return pizzaHawaiian() + crust() + toppings();
+}
+//mediterranean total
+function totalPizzaPriceMeditarrenean() {
+    return pizzaNameMeditarrenean() + crust() + toppings()
+}
+//meatLovers
+function totalPizzaPriceMeatLovers() {
+    return pizzaNameMeatLovers() + crust() + toppings()
+}
+// vegan
+function totalPizzaPriceVegan() {
+    return pizzaNameVegan() + crust() + toppings()
+}
+//UI 
+//jQuery
+//meatLovers
+$(document).ready(function () {
+    $("form#meat").submit(function () {
+        this.size = $(".size option:selected").val();
+        this.crust = $(".crust option:selected").val();
+        this.toppings = $(".toppings option:selected").val();
+        $("#check").text(pizzaPrice)
+    })
+});
+//meditarrenean
+$("form#ml").click(function () {
+    $(".size").change(function () {
+        size = $(".size option:selected").val();
+        $("#check").text(size)
+    })
+});
+$("form#ml").click(function () {
+        size = $(".crust option:selected").val();
+        $("#check").text(crust)
+    })
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                function myFunction(myEle) {
-                                    var x = document.getElementById("myDIV");
-                                    x.innerHTML = "This is category " + myEle.value;
-                                  }
+$("form#ml").click(function () {
+    $(".toppings").change(function () {
+        size = $(".toppings option:selected").val();
+        $("#check").text(toppings)
+    })
+});
+$("form#ml").click(function () {
+    $(".input").change(function () {
+        size = $(".input option:selected").val();
+        $("#check").text(input)
+    })
+});
+// hawaiian
+$("#btn-addtocart-hawaii").click(function () {
+    $(".size").change(function () {
+        size = $(".size option:selected").val();
+        $("#check").text(size)
+    })
+});
+$("#btn-addtocart-hawaii").click(function () {
+    $(".crust").change(function () {
+        crust= $(".crust option:selected").val();
+        $("#check").text(crust)
+    })
+});
+$("#btn-addtocart-hawaii").click(function () {
+    $(".toppings").change(function () {
+        toppings = $(".toppings option:selected").val();
+        $("#check").text(toppings)
+    })
+});
+$("#btn-addtocart-hawaii").click(function () {
+    $(".input").change(function () {
+        number = $(".input option:selected").val();
+        $("#check").text(input)
+    })
+});
+//vegan
+$("#btn-addtocart-vegan").click(function () {
+    $(".size").change(function () {
+        size = $(".size option:selected").val();
+        $("#checkout").text(size)
+    })
+});
+$("#btn-addtocart-vegan").click(function () {
+    $(".crust").change(function () {
+        size = $(".crust option:selected").val();
+        $("#checkout").text(crust)
+    })
+});
+$("#btn-addtocart-vegan").click(function () {
+    $(".toppings").change(function () {
+        size = $(".toppings option:selected").val();
+        $("#checkout").text(toppings)
+    })
+});
+$("#btn-addtocart-vegan").click(function () {
+    $(".input").change(function () {
+        size = $(".input option:selected").val();
+        $("#checkout").text(input)
+    })
+});
