@@ -17,10 +17,10 @@ PizzaPrice.prototype.summary = function () {
     let cartPrice = 0;
 
     for (let index = 0; index < myArray.length; index++) {
-        cartPrice += myArray[index];  
+        cartPrice += myArray[index];
     }
     return cartPrice
- }
+}
 
 
 //UI 
