@@ -1,195 +1,96 @@
 ////businesslogic
-
-
+var myArray = [];
 // Pizza(names)
-function MeatLoversPizza(name, size, crust, toppings, number, ) {
-    this.name = name;
-    this.size = size;
-    this.crust = crust;
-    this.toppings = toppings;
-    this.number = number;
-    this.deliveryPrice = delivery
-}
-MeatLoversPizza.prototype.details = function () {
-    return "Name" + "" + "Size" + "" + "Crust" + "" + "Toppings"
-}
-MeatLoversPizza.prototype.details = function () {
-    return (this.name + this.size + this.toppings + this.crust) * this.number
-}
-function MediterraneanPizza(name, size, crust, toppings, number) {
-    this.name = name;
+function PizzaPrice(size, crust, toppings, number) {
     this.size = size;
     this.crust = crust;
     this.toppings = toppings;
     this.number = number;
 }
-MediterraneanPizza.prototype.details = function () {
+PizzaPrice.prototype.details = function () {
     return "Name" + "" + "Size" + "" + "Crust" + "" + "Toppings"
 }
-MediterraneanPizza.prototype.details = function () {
-    return (this.name + this.size + this.toppings + this.crust) * this.number
+PizzaPrice.prototype.price = function () {
+    return ((this.size + this.toppings + this.crust) * this.number)
 }
-function HawaiianPizza(name, size, crust, toppings, number) {
-    this.name = name;
-    this.size = size;
-    this.crust = crust;
-    this.toppings = toppings;
-    this.number = number;
-}
-HawaiianPizza.prototype.details = function () {
-    return "Name" + "" + "Size" + "" + "Crust" + "" + "Toppings"
-}
-HawaiianPizza.prototype.details = function () {
-    return (this.name + this.size + this.toppings + this.crust) * this.number
-}
-function VeganPizza(name, size, crust, toppings, number) {
-    this.name = name;
-    this.size = size;
-    this.crust = crust;
-    this.toppings = toppings;
-    this.number = number;
-}
-VeganPizza.prototype.details = function () {
-    return "Name" + "" + "Size" + "" + "Crust" + "" + "Toppings"
-}
-VeganPizza.prototype.details = function () {
-    return (this.name + this.size + this.toppings + this.crust) * this.number
-}
+PizzaPrice.prototype.summary = function () {
+    let cartPrice = 0;
 
-// crust
-function crust() {
-var crustPrice
-    if (selectedCrust === "glutenFree") {
-        crustPrice = 120
-    } else if (selectedCrust === "stuffed") {
-        crustPrice = 100
-    } else if (selectedCrust === "crispy") {
-        crustPrice = 80
+    for (let index = 0; index < myArray.length; index++) {
+        cartPrice += myArray[index];  
     }
-    return crustPrice;
-}
+    return cartPrice
+ }
 
-// size
-function size() {
-var sizePrice
-    if (selectedSize === "small") {
-        sizePrice = 500
-    } else if (selectedSize === "medium") {
-        sizePrice  = 750
-    } else if (selectedSize === "large") {
-        sizePrice  = 1000
-    }
-    return sizePrice ;
-}
-// toppings
-function toppings() {
-var toppingsPrice
-    if (selectedToppings === "bacon") {
-        toppingsPrice = 50
-    } else if (selectedToppings === "extra-cheese") {
-        toppingsprice = 60
-    } else if (selectedToppings === "pepper") {
-        toppingsPrice = 40
-    } return toppingsPrice;
-}
-//Hawaiann total price
-function totalPizzaPriceHawaiian() {
-    return pizzaHawaiian() + crust() + toppings();
-}
-//mediterranean total
-function totalPizzaPriceMeditarrenean() {
-    return pizzaNameMeditarrenean() + crust() + toppings()
-}
-//meatLovers
-function totalPizzaPriceMeatLovers() {
-    return pizzaNameMeatLovers() + crust() + toppings()
-}
-// vegan
-function totalPizzaPriceVegan() {
-    return pizzaNameVegan() + crust() + toppings()
-}
+
 //UI 
 //jQuery
 //meatLovers
 $(document).ready(function () {
-    $("form#meat").submit(function () {
-        this.size = $(".size option:selected").val();
-        this.crust = $(".crust option:selected").val();
-        this.toppings = $(".toppings option:selected").val();
-        $("#check").text(pizzaPrice)
+    $("form#meat").submit(function (event) {
+        event.preventDefault()
+        let size = parseInt($("#size option:selected").val());
+        let crust = parseInt($("#crust option:selected").val());
+        let toppings = parseInt($("#toppings option:selected").val());
+        let number = parseInt($("#number").val());
+
+        let pizzaPrice = new PizzaPrice(size, crust, toppings, number)
+
+        let calcPrice = pizzaPrice.price()
+
+        myArray.push(calcPrice);
+        $("#check").text(pizzaPrice.summary())
     })
 });
 //meditarrenean
-$("form#ml").click(function () {
-    $(".size").change(function () {
-        size = $(".size option:selected").val();
-        $("#check").text(size)
-    })
-});
-$("form#ml").click(function () {
-        size = $(".crust option:selected").val();
-        $("#check").text(crust)
-    })
+$(document).ready(function () {
+    $("form#ml").submit(function (event) {
+        event.preventDefault()
+        let size = parseInt($("#size3 option:selected").val());
+        let crust = parseInt($("#crust3 option:selected").val());
+        let toppings = parseInt($("#toppings3 option:selected").val());
+        let number = parseInt($("#number3").val());
 
-$("form#ml").click(function () {
-    $(".toppings").change(function () {
-        size = $(".toppings option:selected").val();
-        $("#check").text(toppings)
+        let mediPrice = new PizzaPrice(size, crust, toppings, number)
+
+        let mediCost = mediPrice.price()
+
+
+        myArray.push(mediCost)
+        $("#check").text(mediPrice.summary())
     })
 });
-$("form#ml").click(function () {
-    $(".input").change(function () {
-        size = $(".input option:selected").val();
-        $("#check").text(input)
-    })
-});
-// hawaiian
-$("#btn-addtocart-hawaii").click(function () {
-    $(".size").change(function () {
-        size = $(".size option:selected").val();
-        $("#check").text(size)
-    })
-});
-$("#btn-addtocart-hawaii").click(function () {
-    $(".crust").change(function () {
-        crust= $(".crust option:selected").val();
-        $("#check").text(crust)
-    })
-});
-$("#btn-addtocart-hawaii").click(function () {
-    $(".toppings").change(function () {
-        toppings = $(".toppings option:selected").val();
-        $("#check").text(toppings)
-    })
-});
-$("#btn-addtocart-hawaii").click(function () {
-    $(".input").change(function () {
-        number = $(".input option:selected").val();
-        $("#check").text(input)
+//hawaii
+$(document).ready(function () {
+    $("form#hawaii").submit(function (event) {
+        event.preventDefault()
+        let size = parseInt($("#size2 option:selected").val());
+        let crust = parseInt($("#crust2 option:selected").val());
+        let toppings = parseInt($("#toppings2 option:selected").val());
+        let number = parseInt($("#number2").val());
+
+        let hawaiPrice = new PizzaPrice(size, crust, toppings, number)
+
+        let hawiCost = hawaiPrice.price()
+
+        myArray.push(hawiCost)
+        $("#check").text(hawaiPrice.summary())
     })
 });
 //vegan
-$("#btn-addtocart-vegan").click(function () {
-    $(".size").change(function () {
-        size = $(".size option:selected").val();
-        $("#checkout").text(size)
-    })
-});
-$("#btn-addtocart-vegan").click(function () {
-    $(".crust").change(function () {
-        size = $(".crust option:selected").val();
-        $("#checkout").text(crust)
-    })
-});
-$("#btn-addtocart-vegan").click(function () {
-    $(".toppings").change(function () {
-        size = $(".toppings option:selected").val();
-        $("#checkout").text(toppings)
-    })
-});
-$("#btn-addtocart-vegan").click(function () {
-    $(".input").change(function () {
-        size = $(".input option:selected").val();
-        $("#checkout").text(input)
+$(document).ready(function () {
+    $("form#vegan").submit(function (event) {
+        event.preventDefault()
+        let size = parseInt($("#size1 option:selected").val());
+        let crust = parseInt($("#crust1 option:selected").val());
+        let toppings = parseInt($("#toppings1 option:selected").val());
+        let number = parseInt($("#number1").val());
+
+        let veganPrice = new PizzaPrice(size, crust, toppings, number)
+
+        let veganCost = veganPrice.price()
+
+        myArray.push(veganCost)
+        $("#check").text(veganPrice.summary())
     })
 });
