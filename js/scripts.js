@@ -1,17 +1,18 @@
 ////businesslogic
 var myArray = [];
 // Pizza(names)
-function PizzaPrice(size, crust, toppings, number) {
+function PizzaPrice(size, crust, toppings, number, name) {
     this.size = size;
     this.crust = crust;
     this.toppings = toppings;
     this.number = number;
+    this.name = name;
 }
 PizzaPrice.prototype.details = function () {
-    return "Name" + "" + "Size" + "" + "Crust" + "" + "Toppings"
+    return this.name + "" + this.size + "" + this.crust + "" + this.toppings
 }
 PizzaPrice.prototype.price = function () {
-    return ((this.size + this.toppings + this.crust) * this.number)
+    return this.size + this.toppings + this.crust
 }
 PizzaPrice.prototype.summary = function () {
     let cartPrice = 0;
@@ -33,14 +34,21 @@ $(document).ready(function () {
         let crust = parseInt($("#crust option:selected").val());
         let toppings = parseInt($("#toppings option:selected").val());
         let number = parseInt($("#number").val());
+        let name = $("#name").text();
+        let mysize = $("#size option:selected").text();
+        let mycrust = $("#crust option:selected").text();
+        let mytoppings = $("#toppings option:selected").text();
 
-        let pizzaPrice = new PizzaPrice(size, crust, toppings, number)
+        let pizzaPrice = new PizzaPrice(size, crust, toppings)
+        let meatDetails = new PizzaPrice(name, mysize, mycrust, mytoppings)
 
-        let calcPrice = pizzaPrice.price()
+        let calcPrice = pizzaPrice.price();
 
-        myArray.push(calcPrice);
-        $("#check").text(pizzaPrice.summary())
-    })
+
+        myArray.push(calcPrice * number);
+        $("#checkers").append("<li><span class='checkers'>" + meatDetails.details() + "" + calcPrice + "</span></li>");
+        $("#check").text(pizzaPrice.summary());
+    });
 });
 //meditarrenean
 $(document).ready(function () {
@@ -50,8 +58,12 @@ $(document).ready(function () {
         let crust = parseInt($("#crust3 option:selected").val());
         let toppings = parseInt($("#toppings3 option:selected").val());
         let number = parseInt($("#number3").val());
+        let name = $("#name").text();
+        let mysize = $("#size option:selected").text();
+        let mycrust = $("#crust option:selected").text();
+        let mytoppings = $("#toppings option:selected").text();
 
-        let mediPrice = new PizzaPrice(size, crust, toppings, number)
+        let mediPrice = new PizzaPrice(mysize, mycrust, mytoppings)
 
         let mediCost = mediPrice.price()
 
@@ -72,7 +84,7 @@ $(document).ready(function () {
         let hawaiPrice = new PizzaPrice(size, crust, toppings, number)
 
         let hawiCost = hawaiPrice.price()
-
+        
         myArray.push(hawiCost)
         $("#check").text(hawaiPrice.summary())
     })

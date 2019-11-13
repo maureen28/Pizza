@@ -49,12 +49,24 @@
                                     <option value="120">Gluten free</option>
                                     <option value="100">Stuffed</option>
                                 </select><br><br>
-                                <select id="toppings" class="form-control" placeholder="Extra toppings" required>
-                                    <option value="">Choose extra toppings</option>
-                                    <option value="60">Extra cheese</option>
-                                    <option value="40">Bacon </option>
-                                    <option value="50">pepper</option>
-                                </select><br><br>
+                                <div id="toppings">
+                                <div class="checkbox">
+                                    <input type="checkbox" value="60" name="toppings">
+                                        <label for="Extra Cheese">Extra cheese</label>
+                                    </div>
+                                    <div class="ccheckbox">
+                                        <input type="checkbox" value="70" name="toppings">
+                                        <label for="Mushrooms">Mushrooms</label>
+                                    </div>
+                                        <div class="checkbox">
+                                            <input type="checkbox" name="toppings" value="40">
+                                        <label for="bacon">Bacon </label>
+                                    </div>
+                                        <div class="checkbox">
+                                            <input type="checkbox" name="toppings" value="50">
+                                        <label for="pepper">Pepper</label>
+                                    </div>
+                                </div><br><br>
                                 <input type="number" id="number" class="form-control"
                                     placeholder="Number of Pizzas"><br><br>
                                 <button type="submit" style="text-align: center;" id="btn-addtocart-ml"
@@ -84,12 +96,24 @@
                                     <option value="120">Gluten free</option>
                                     <option value="100">Stuffed</option>
                                 </select><br><br>
-                                <select id="toppings1" class="form-control" placeholder="Extra toppings" required>
-                                    <option value="">Choose extra toppings</option>
-                                    <option value="60">Extra cheese</option>
-                                    <option value="40">Bacon </option>
-                                    <option value="50">pepper</option>
-                                </select><br><br>
+                                <div id="toppings1">
+                                <div class="checkbox">
+                                    <input type="checkbox"  value="60" name="toppings">
+                                        <label for="Extra Cheese">Extra cheese</label>
+                                    </div>
+                                    <div class="ccheckbox">
+                                        <input type="checkbox"  value="70" name="toppings">
+                                        <label for="Mushrooms">Mushrooms</label>
+                                    </div>
+                                        <div class="checkbox">
+                                            <input type="checkbox"  name="toppings" value="40">
+                                        <label for="bacon">Bacon </label>
+                                    </div>
+                                        <div class="checkbox">
+                                            <input type="checkbox" name="toppings" value="50">
+                                        <label for="pepper">Pepper</label>
+                                    </div>
+                                </div><br><br>
                                 <input type="number" id="number1" class="form-control"
                                     placeholder="Number of Pizzas"><br><br>
                                 <button type="submit" style="text-align: center;" id="btn-addtocart-vegan"
@@ -101,11 +125,12 @@
                 <div class="col-md-3 col-lg-3 mx-auto">
                     <div class="card">
                         <img src="images/pizza3.jpg" alt="Hawaiian pizza" class="mx-auto w-100">
-                        <div class="card-body">
-                            <p style="font-size: 1.5rem;"><strong>Hawaiian Pizza</strong></p>
-                            <p>Shredded Ham,Mozarella and Pineapple</p>
-                            <p class="order"><b>ORDER!!!</b></p>
-                            <form id="hawaii">
+                        <form id="hawaii">
+                            <div class="card-body">
+                                <p style="font-size: 1.5rem;"><strong id="name">Hawaiian Pizza</strong></p>
+                                <p>Shredded Ham,Mozarella and Pineapple</p>
+                                <p class="order"><b>ORDER!!!</b></p>
+
                                 <select id="size2" class="form-control" placeholder="choose size" required>
                                     <option value="">Choose size</option>
                                     <option value="500">Small</option>
@@ -118,18 +143,30 @@
                                     <option value="120">Gluten free</option>
                                     <option value="100">Stuffed</option>
                                 </select><br><br>
-                                <select id="toppings2" class="form-control" placeholder="Extra toppings" required>
-                                    <option value="">Choose extra toppings</option>
-                                    <option value="60">Extra cheese</option>
-                                    <option value="40">Bacon </option>
-                                    <option value="50">pepper</option>
-                                </select><br><br>
+                                <div id="toppings2">
+                                    <div class="checkbox" >
+                                        <input type="checkbox" value="60" name="toppings">
+                                            <label for="Extra Cheese">Extra cheese</label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <input type="checkbox"  value="70" name="toppings">
+                                            <label for="Mushrooms">Mushrooms</label>
+                                        </div>
+                                            <div class="checkbox">
+                                                <input type="checkbox"  name="toppings" value="40">
+                                            <label for="bacon">Bacon </label>
+                                        </div>
+                                            <div class="checkbox">
+                                                <input type="checkbox" name="toppings" value="50">
+                                            <label for="pepper">Pepper</label>
+                                        </div>
+                                    </div><br><br>
                                 <input type="number" id="number2" class="form-control"
                                     placeholder="Number of Pizzas"><br><br>
                                 <button type="submit" style="text-align: center;" id="btn-addtocart-hawaii"
                                     class="btn-success form-control">Add To Cart</button>
-                            </form>
-                        </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
                 <div class="col-md-3 col-lg-3 mx-auto">
@@ -153,12 +190,24 @@
                                     <option value="120">Gluten free</option>
                                     <option value="100">Stuffed</option>
                                 </select><br><br>
-                                <select id="toppings3" class="form-control" placeholder="Extra toppings" required>
-                                    <option value="">Choose extra toppings</option>
-                                    <option value="60">Extra cheese</option>
-                                    <option value="40">Bacon </option>
-                                    <option value="50">pepper</option>
-                                </select><br><br>
+                                <div id="toppings3">
+                                <div class="checkbox">
+                                <input type="checkbox"  value="60" name="toppings">
+                                    <label for="Extra Cheese">Extra cheese</label>
+                                </div>
+                                <div class="ccheckbox">
+                                    <input type="checkbox" value="70" name="toppings">
+                                    <label for="Mushrooms">Mushrooms</label>
+                                </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="toppings" value="40">
+                                    <label for="bacon">Bacon </label>
+                                </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox"  name="toppings" value="50">
+                                    <label for="pepper">Pepper</label>
+                                </div>
+                            </div><br><br>
                                 <input id="number3" type="number" class="form-control"
                                     placeholder="Number of Pizzas"><br><br>
                                 <button type="submit" style="text-align: center;" id="btn-addtocart-md"
@@ -173,22 +222,25 @@
             <div id="checkout">
                 <div id="Order">ORDER SUMMARY</div>
                 <span id="check"></span>
-                <p>Would you prefer pickup or delivery?</p>
+                <ul id="checkers"></ul>
+                <p style="font-weight: bolder;">Would you prefer pickup or delivery?</p>
                 <div id="pick">
-                    <div class="btn-group" data-toggle="buttons">
-                        <button type="radio" name="rd1" class="btn-success form-control">Pick-up</button><br>
-                        <button type="radio" name="rd2" class="btn-primary form-control">Delivery</button>
-                    </div><br><br>
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="Email" placeholder="ENTER EMAIL">
+                    <div class="checkbox">
+                    <input type="checkbox" value="0" name="pick-up">
+                    <label for="pickup">Pick-up</label>
+                </div>
+                <div class="checkbox">
+                        <input type="checkbox" value="200" name="delivery">
+                        <label for="delivery">Delivery</label>
                     </div>
-                    <p>Where are we delivering to?</p>
+                    </div>
+                    <p style="font-weight: bold;">Where are we delivering to?</p>
                     <form>
                         <select class="form-control-sm-3" placeholder="Choose Location">
                             <option value="location">Choose Location</option>
-                            <option value="location">Spring Valley @ksh 150</option>
-                            <option value="location">Prestige @ksh 100</option>
-                            <option value="location">Other @ksh 200</option>
+                            <option value="location">Spring Valley </option>
+                            <option value="location">Prestige</option>
+                            <option value="location">Other</option>
                         </select>
                     </form>
                 </div>
